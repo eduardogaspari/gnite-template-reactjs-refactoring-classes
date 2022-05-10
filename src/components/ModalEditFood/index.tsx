@@ -24,7 +24,7 @@ const ModalEditFood: React.FC<ModalEditFoodProps> = ({
   handleUpdateFood,
   editingFood,
 }) => {
-  const formRef = useRef<FormHandles | null>(null);
+  const formRef = useRef<FormHandles>(null);
 
   const handleSubmit = async (data: IAddFood) => {
     handleUpdateFood(data);

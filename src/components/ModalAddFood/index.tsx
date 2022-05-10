@@ -22,7 +22,7 @@ const ModalAddFood: React.FC<ModalAddFoodProps> = ({
   setIsOpen,
   handleAddFood
 }) => {
-  const formRef = useRef<FormHandles | null>(null);
+  const formRef = useRef<FormHandles>(null);
 
   const handleSubmit = async (data: IAddFood) => {
     handleAddFood(data);
